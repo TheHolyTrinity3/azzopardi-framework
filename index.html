@@ -1,203 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>The Azzopardi Framework</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Azzopardi Framework | Official Repo</title>
+    <style>
+        :root {
+            --space-black: #05070a;
+            --nebula-purple: #6b4ed1;
+            --star-gold: #f4d03f;
+            --text-gray: #d1d1d1;
+        }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: black;
-  color: #e0e0e0;
-  text-align: center;
-  overflow-x: hidden;
-}
+        body {
+            background: radial-gradient(circle at center, #1a1c2c 0%, var(--space-black) 100%);
+            color: var(--text-gray);
+            font-family: 'Garamond', serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-header h1 {
-  font-size: 3em;
-  color: #d4af37;
-}
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0,0,0,0.4);
+        }
 
-.subtitle {
-  color: #aaa;
-}
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 5px;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
 
-section {
-  padding: 40px;
-  max-width: 900px;
-  margin: auto;
-}
+        .framework-content {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
 
-.quote {
-  font-size: 1.4em;
-  font-style: italic;
-}
+        /* The Mobius Sections */
+        .section-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--nebula-purple);
+            padding: 30px;
+            margin-bottom: 50px;
+            border-radius: 0 15px 15px 0;
+            transition: 0.3s;
+        }
 
-.ending {
-  margin-top: 20px;
-  font-weight: bold;
-}
+        .section-box:hover {
+            background: rgba(255, 255, 255, 0.07);
+        }
 
-.sketches {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+        /* Sketch Display */
+        .sketch-container {
+            text-align: center;
+            margin: 40px 0;
+        }
 
-.sketches img {
-  width: 200px;
-  border: 2px solid #d4af37;
-}
+        .sketch-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #444;
+            box-shadow: 0 0 20px rgba(107, 78, 209, 0.3);
+            border-radius: 8px;
+        }
 
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+        .caption {
+            font-style: italic;
+            color: var(--star-gold);
+            margin-top: 15px;
+            display: block;
+        }
 
-.card {
-  border: 1px solid #d4af37;
-  padding: 20px;
-  width: 200px;
-  text-decoration: none;
-  color: #e0e0e0;
-  transition: 0.3s;
-}
+        /* Footer Links */
+        footer {
+            background: #000;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
 
-.card:hover {
-  background: rgba(212,175,55,0.1);
-  transform: scale(1.05);
-}
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 10px;
+            color: white;
+            border: 1px solid var(--nebula-purple);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
 
-footer {
-  padding: 40px;
-  border-top: 1px solid #333;
-}
-
-.final-quote {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-/* STARFIELD */
-.stars {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(white 1px, transparent 1px);
-  background-size: 3px 3px;
-  opacity: 0.2;
-  z-index: -2;
-}
-
-/* SPIRAL */
-.spiral {
-  position: fixed;
-  width: 400px;
-  height: 400px;
-  border: 2px solid rgba(212,175,55,0.3);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-</style>
+        .btn:hover {
+            background: var(--nebula-purple);
+            box-shadow: 0 0 15px var(--nebula-purple);
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="stars"></div>
-<div class="spiral" id="spiral"></div>
+    <header>
+        <h1>The Azzopardi Framework</h1>
+        [span_3](start_span)<p>A Unified Theory of Consciousness, Gravity, and Cosmic Evolution[span_3](end_span)</p>
+    </header>
 
-<header>
-  <h2>Mark J. Azzopardi · 2026</h2>
-  <h1>The Azzopardi Framework</h1>
-  <p class="subtitle">A Theory of Spiral Curvature & The Cycle of Existence</p>
-</header>
+    <div class="framework-content">
+        
+        <div class="section-box">
+            <h2>I. The Cosmic Geometry</h2>
+            [span_4](start_span)[span_5](start_span)<p>Reality is not a circle; it is a Mobius strip[span_4](end_span)[span_5](end_span). [span_6](start_span)[span_7](start_span)Existence is a continuous surface where birth and death are merely the twist point where the surface inverts[span_6](end_span)[span_7](end_span).</p>
+            <div class="sketch-container">
+                <img src="sketch1.jpg" alt="Initial Framework Sketch">
+                [span_8](start_span)<span class="caption">Fig 1: The Spiral Motion of the Mobius Surface[span_8](end_span)</span>
+            </div>
+        </div>
 
-<section class="intro">
-  <p class="quote">
-    I didn’t arrive here through a university. I arrived here through a question. What happens when we die?
-  </p>
+        <div class="section-box">
+            <h2>II. The Inter-Universal Relay</h2>
+            [span_9](start_span)<p>Our universe sits between a white hole delivery event and a future black hole compression event[span_9](end_span). [span_10](start_span)[span_11](start_span)[span_12](start_span)Black holes refine conscious energy into dark matter, the carrier of the next evolutionary update[span_10](end_span)[span_11](end_span)[span_12](end_span).</p>
+            <div class="sketch-container">
+                <img src="sketch2.png" alt="Relay Topology">
+                [span_13](start_span)<span class="caption">Fig 2: The Transmission Logic of Information-Density[span_13](end_span)</span>
+            </div>
+        </div>
 
-  <p>
-    This framework did not begin with equations or academic study. It began with a single human question: what am I, and what happens when I die?
-  </p>
+        <div class="section-box">
+            <h2>III. Biological Integration</h2>
+            [span_14](start_span)[span_15](start_span)[span_16](start_span)<p>Evolution is not random; it is an update cycle activated by sunlight and Vitamin D synthesis, bonding dark matter data to DNA one generation at a time[span_14](end_span)[span_15](end_span)[span_16](end_span).</p>
+            <div class="sketch-container">
+                <img src="sketch3.jpg" alt="DNA and Light Activation">
+                [span_17](start_span)<span class="caption">Fig 3: The Complete Inter-Universal Relay[span_17](end_span)</span>
+            </div>
+        </div>
 
-  <p>
-    From that question, a chain of reasoning emerged — scaling from the personal, to the planetary, to the cosmic.
-  </p>
-
-  <p class="ending">
-    I didn’t wait for permission to think seriously about it. This is the result.
-  </p>
-</section>
-
-<section>
-  <h2>Where It All Meets</h2>
-  <p>
-    The Manifesto and the Spiral Curvature Theory are not separate ideas. They are two perspectives of the same structure. One describes meaning. The other describes mechanism. Together, they form a single framework — a continuous Mobius system of existence.
-  </p>
-</section>
-
-<section>
-  <h2>Where It Began. Where It Led.</h2>
-  <div class="sketches">
-    <div>
-      <img src="images/sketch1.jpg">
-      <p>Initial concept of the cycle</p>
     </div>
-    <div>
-      <img src="images/sketch2.jpg">
-      <p>Development of spiral structure</p>
-    </div>
-    <div>
-      <img src="images/sketch3.jpg">
-      <p>Unified framework</p>
-    </div>
-  </div>
-</section>
 
-<section class="cards">
-  <a href="framework.html" class="card">
-    <h3>The Framework</h3>
-    <p>Full unified theory</p>
-  </a>
-
-  <a href="manifesto.html" class="card">
-    <h3>The Manifesto</h3>
-    <p>Philosophical foundation</p>
-  </a>
-
-  <a href="spiral.html" class="card">
-    <h3>Spiral Curvature</h3>
-    <p>Scientific model</p>
-  </a>
-</section>
-
-<footer>
-  <p class="final-quote">
-    What we are now is only one side of what we will become
-  </p>
-  <p>Email: your@email.com</p>
-</footer>
-
-<script>
-const spiral = document.getElementById('spiral');
-let angle = 0;
-
-function animate() {
-  angle += 0.1;
-  spiral.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
-  requestAnimationFrame(animate);
-}
-
-animate();
-</script>
+    <footer>
+        <h3>The Scribe Vault</h3>
+        <a href="https://theholytrinity3.github.io/The-Temporal-Evolutionary-Cosmogenesis-Manifesto-By-Mark-J-Azzopardi/" class="btn">The Manifesto</a>
+        <a href="https://theholytrinity3.github.io/spiral_evolution.py./" class="btn">Spiral Evolution Code</a>
+        <p style="margin-top:20px; font-size: 0.8rem;">&copy; [span_18](start_span)2026 Mark J. Azzopardi - All Rights Reserved[span_18](end_span)</p>
+    </footer>
 
 </body>
 </html>
