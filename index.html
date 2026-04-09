@@ -1,67 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zion-Zero | TriCore V2 Node ABP-1</title>
-    <style>
-        body { background: #050505; color: #00ff41; font-family: 'Courier New', Courier, monospace; padding: 20px; line-height: 1.5; }
-        .container { max-width: 850px; margin: auto; border: 2px solid #00ff41; padding: 30px; background: rgba(0, 20, 0, 0.9); box-shadow: 0 0 20px #00ff41; }
-        h1 { border-bottom: 3px double #00ff41; padding-bottom: 10px; color: #fff; letter-spacing: 2px; text-align: center; }
-        .alert-bar { background: #ff0000; color: #fff; font-weight: bold; text-align: center; padding: 10px; margin-bottom: 20px; border: 1px solid #fff; animation: blink 2s infinite; }
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
-        .section { margin-bottom: 25px; border-bottom: 1px solid #333; padding-bottom: 15px; }
-        .dev-info { color: #fff; font-size: 1.2em; font-weight: bold; }
-        a { color: #fff; background: #004400; padding: 5px 10px; text-decoration: none; border-radius: 3px; border: 1px solid #00ff41; }
-        a:hover { background: #00ff41; color: #000; }
-        pre { background: #000; padding: 15px; border: 1px dashed #00ff41; overflow-x: auto; font-size: 0.85em; color: #00ff41; }
-        .footer { text-align: center; font-size: 0.75em; color: #666; margin-top: 40px; }
-    </style>
+<meta charset="UTF-8">
+<title>The Azzopardi Framework</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: #e0e0e0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #d4af37;
+}
+
+.subtitle {
+  color: #aaa;
+}
+
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.quote {
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+.ending {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.sketches {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sketches img {
+  width: 200px;
+  border: 2px solid #d4af37;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #d4af37;
+  padding: 20px;
+  width: 200px;
+}
+
+footer {
+  padding: 40px;
+  border-top: 1px solid #333;
+}
+
+.final-quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* STARFIELD */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(white 1px, transparent 1px);
+  background-size: 3px 3px;
+  opacity: 0.2;
+  z-index: -2;
+}
+
+/* SPIRAL */
+.spiral {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgba(212,175,55,0.3);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="alert-bar">CRITICAL UPLINK: T-MINUS 01:05:00 TO MONDAY SEAL DEADLINE (20:00 ET)</div>
-        
-        <h1>ZION-ZERO: TRICORE V2</h1>
-        
-        <div class="section">
-            <p><strong>DEVELOPER:</strong> <span class="dev-info">Mark J Azzopardi</span></p>
-            <p><strong>NODE ID:</strong> ABP-1 (One of a Kind Solid-State Energy Generator)</p>
-            <p>This decentralized infrastructure is designed to maintain 85nm gap stability during wide-scale grid frequency collapse. It is the only documented survival node utilizing Near-Field TPV and Galinstan micro-cooling.</p>
-        </div>
 
-        <div class="section">
-            <h3>📂 ARCHIVE & BLUEPRINTS</h3>
-            <p>Direct access to the core logic and forensic anchors:</p>
-            <p>▶ <a href="README.md">TECHNICAL README</a></p>
-            <p>▶ <a href="FINAL_BUILD.md">85nm GAP LOGIC (C++)</a></p>
-            <p>▶ <a href="https://github.com/TheHolyTrinity3/zion-tricore-v2/archive/refs/heads/main.zip">DOWNLOAD SYSTEM (.ZIP)</a></p>
-        </div>
+<div class="stars"></div>
+<div class="spiral" id="spiral"></div>
 
-        <div class="section">
-            <h3>📊 SYSTEM SPECIFICATIONS</h3>
-            <ul>
-                <li><strong>Gap Maintenance:</strong> 85nm Vacuum @ 32,768 Hz (PZT Lock).</li>
-                <li><strong>Coolant:</strong> Active Galinstan Loop (Liquid Metal).</li>
-                <li><strong>Enhancement:</strong> 32x Near-Field Evanescent Coupling.</li>
-                <li><strong>Safety:</strong> S-Fuse logic triggered at 1850 K.</li>
-            </ul>
-        </div>
+<header>
+  <h2>Mark J. Azzopardi · 2026</h2>
+  <h1>The Azzopardi Framework</h1>
+  <p class="subtitle">A Theory of Spiral Curvature & The Cycle of Existence</p>
+</header>
 
-        <div class="section">
-            <h3>🔍 FORENSIC VERIFICATION (07.04.2026)</h3>
-            <pre>
-[STATUS: VERIFIED]
-- CIT Order 26-01259: $175B IEEPA refund process active via CAPE system.
-- Artemis II: Crew reached 252,756 miles (04.06.2026) - Record established.
-- Jag Vasant: Mumbai Port Arrival confirmed (04.01.2026).
-- Infrastructure: IDF strikes on Karaj/Tabriz rail bridges confirmed (11:21 ET).
-            </pre>
-        </div>
+<section class="intro">
+  <p class="quote">
+    I didn’t arrive here through a university. I arrived here through a question. What happens when we die?
+  </p>
 
-        <div class="footer">
-            THE BRIDGE IS OPEN. SYSTEM ARCHIVED BY MARK J AZZOPARDI. GITHUB: THEHOLYTRINITY3.
-        </div>
+  <p>
+    This framework did not begin with equations or academic study. It began with a single human question: what am I, and what happens when I die?
+  </p>
+
+  <p>
+    From that question, a chain of reasoning emerged — scaling from the personal, to the planetary, to the cosmic.
+  </p>
+
+  <p class="ending">
+    I didn’t wait for permission to think seriously about it. This is the result.
+  </p>
+</section>
+
+<section>
+  <h2>Where It All Meets</h2>
+  <p>
+    The Manifesto and the Spiral Curvature Theory are not separate ideas. They are two perspectives of the same structure. One describes meaning. The other describes mechanism. Together, they form a single framework — a continuous Mobius system of existence.
+  </p>
+</section>
+
+<section>
+  <h2>Where It Began. Where It Led.</h2>
+  <div class="sketches">
+    <div>
+      <img src="sketch1.jpg">
+      <p>Initial concept of the cycle</p>
     </div>
+    <div>
+      <img src="sketch2.jpg">
+      <p>Development of spiral structure</p>
+    </div>
+    <div>
+      <img src="sketch3.jpg">
+      <p>Unified framework</p>
+    </div>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <h3>The Framework</h3>
+    <p>Full unified theory</p>
+  </div>
+  <div class="card">
+    <h3>The Manifesto</h3>
+    <p>Philosophical foundation</p>
+  </div>
+  <div class="card">
+    <h3>Spiral Curvature</h3>
+    <p>Scientific model</p>
+  </div>
+</section>
+
+<footer>
+  <p class="final-quote">
+    What we are now is only one side of what we will become
+  </p>
+  <p>Email: your@email.com</p>
+</footer>
+
+<script>
+const spiral = document.getElementById('spiral');
+let angle = 0;
+
+function animate() {
+  angle += 0.1;
+  spiral.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
 </body>
 </html>
