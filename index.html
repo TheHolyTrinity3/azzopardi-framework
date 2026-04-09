@@ -62,6 +62,14 @@ section {
   border: 1px solid #d4af37;
   padding: 20px;
   width: 200px;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: rgba(212,175,55,0.1);
+  transform: scale(1.05);
 }
 
 footer {
@@ -140,33 +148,35 @@ footer {
   <h2>Where It Began. Where It Led.</h2>
   <div class="sketches">
     <div>
-      <img src="sketch1.jpg">
+      <img src="images/sketch1.jpg">
       <p>Initial concept of the cycle</p>
     </div>
     <div>
-      <img src="sketch2.jpg">
+      <img src="images/sketch2.jpg">
       <p>Development of spiral structure</p>
     </div>
     <div>
-      <img src="sketch3.jpg">
+      <img src="images/sketch3.jpg">
       <p>Unified framework</p>
     </div>
   </div>
 </section>
 
 <section class="cards">
-  <div class="card">
+  <a href="framework.html" class="card">
     <h3>The Framework</h3>
     <p>Full unified theory</p>
-  </div>
-  <div class="card">
+  </a>
+
+  <a href="manifesto.html" class="card">
     <h3>The Manifesto</h3>
     <p>Philosophical foundation</p>
-  </div>
-  <div class="card">
+  </a>
+
+  <a href="spiral.html" class="card">
     <h3>Spiral Curvature</h3>
     <p>Scientific model</p>
-  </div>
+  </a>
 </section>
 
 <footer>
